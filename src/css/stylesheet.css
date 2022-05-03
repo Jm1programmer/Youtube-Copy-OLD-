@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  
+}
+
+
+
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: #535252;
+width: 10px;
+ }
+ 
+
+body {
+    background-color: #f7f3f3;
+    
+}
+
+header{
+    width: 100%;
+    height: 59px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 1px #f0e9f0; ;
+    display: flex;
+   align-items: center;
+   position: fixed;
+   justify-content: inherit;
+   z-index: 2;
+
+}
+
+
+
+.menuhorizontal {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);;
+    
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition: all .2s;
+   position: fixed;
+   margin-top: 60px;
+   margin-right: 0;
+}
+
+.small {
+    margin-left: -200px;
+}
+
+.menuhorizontal .Icones-menu {
+    list-style-type: none;
+    padding: 30px 0;
+    height: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-items: flex-start;
+   
+    box-shadow: 0px 2px 0px #f0e9f0; 
+}
+
+.menuhorizontal .Icones-menu li {
+    display: flex;
+    padding: 5px 28px;
+    align-items: center;
+    
+}
+
+.menuhorizontal .Icones-menu li:first-child {
+    color: red;
+}
+
+.menuhorizontal .Icones-menu li:hover {
+    background-color: #d4cece;
+    cursor: pointer;
+}
+
+.menuhorizontal .Icones-menu li .text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 15px;
+}
+
+.menuhorizontal .Icones-menu li i {
+    font-size: 25px;
+}
+
+.menuhorizontal .subscribes {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.menuhorizontal .subscribes .subscribe-text {
+    font-size: 14px;
+    color: gray;
+    font-weight: 900;
+}
+
+.menuhorizontal .subscribes ul {
+    list-style-type: none;
+    padding: 20px 0;
+    width: 101%
+}
+
+.menuhorizontal .subscribes ul li {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    width: 100%;
+}
+
+.menuhorizontal .subscribes ul li:hover {
+    background-color: #d4cece;
+    cursor: pointer;
+    
+}
+
+.menuhorizontal .subscribes ul li .perfil-image {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: #423d3d;
+   border-radius: 36px;
+  display: block;
+  flex-basis: 24px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.menuhorizontal .subscribes ul li .text{
+    margin-left: 10px;
+}
+
+.menuhorizontal .subscribes ul li .perfil-image img {
+    width: 24px;
+    height: 24px;
+    border-radius: 36px;
+}
+
+header .bx-menu {
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+
+
+
+header .menuyoutubeicon {
+    display: flex;
+    align-items: center;
+    
+   
+}
+
+header  .menuyoutubeicon .youtube-menu-icon {
+    width: 30px;
+    height: 30px;
+}
+
+header  .menuyoutubeicon .text {
+   font-size: 20px;
+   font-family: 'Roboto', sans-serif;
+font-weight:900;
+}
+
+header .searchbar {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .searchbar .searchbarbackground {
+    width: 494px;
+    height: 40px;
+    display: flex;
+    background-color: white;
+    
+    margin-left: 260px;
+    outline: 1px solid #dfdcdc;
+
+}
+
+header .searchbar .searchbarbackground input {
+    border: 0;
+    outline: none;
+    width: 470px;
+    height: 24px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-weight: 300;
+}
+
+
+header .searchbar .searchbutton {
+    width: 60px;
+    height: 40px;
+    background-color: #eeecec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor:pointer;
+}
+
+header .microfone-menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeececd8;
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+header .scope {
+    display: flex;
+    align-items: center;
+     margin-left: 210px;
+    
+    font-size: 25px;
+    color: gray;
+}
+
+header .scope .perfil-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    outline: 1px solid #eeececd8;
+    cursor: pointer;
+    
+}
+
+header .scope  #scope-icon {
+ padding: 12px;
+ cursor: pointer;
+}
+
+
+
+.container {
+    display: grid;
+grid-gap: 40px;
+grid-row-gap: 150px;
+grid-template-columns: repeat(4,.2fr);
+padding: 80px 205px;
+}
+
+.containermenuon {
+    display: grid;
+    grid-gap: 40px;
+    grid-row-gap: 180px;
+    grid-template-columns: repeat(4,.2fr);
+    padding: 80px 140px;
+}
+
+.container .box{
+width: 253px;
+height: 142px;
+background-color: #423d3d;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.container .box .Tumbnail {
+    width: 253px;
+    height: 142px;
+    border-radius: 5px;
+}
+
+.container .box .information {
+    color: black;
+}
+
+.container .box .information .firstinformation{
+  display: flex;
+ 
+ }
+
+.container .box .information .firstinformation .perfil-image {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-color: #423d3d;
+   border-radius: 36px;
+  display: block;
+  flex-basis: 36px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+
+.container .box .information .firstinformation .perfil-image img {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+}
+.container .box .information .firstinformation .titulo {
+  font-size: 15px;
+  font-weight:900;
+  margin-left: 10px;
+  width: 75%;
+}
+
+.container .box .information .secondinformantion  {
+    margin: 10px 32px;
+  }
+
+.container .box .information .secondinformantion .channelname {
+    font-size: 12px;
+    font-weight:100;
+    margin-left: 10px;
+   
+  }
+  
+  .container .box .information .secondinformantion .views-and-age{
+    font-size: 12px;
+    font-weight:100;
+     margin: 5px 10px;
+    width: 100%;
+  }
+  
+  .superbox {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      
+  }
+
+  
+
+  .superbox .video-all video {
+      width: 853px;
+      height: 480px;
+      margin-left: 50px;
+      margin-top: 80px;
+  }
+
+  .superbox .video-all .informations .titulo {
+      font-size: 20px;
+      font-weight: 900;
+      margin-left: 50px;
+      margin-top: 15px;
+  }
+
+  .superbox .video-all .informations .informations-flex {
+      display: flex;
+      margin-left: 50px;
+      margin-top: 10px;
+      align-items: center;
+  }
+
+  .superbox .video-all .informations .informations-flex .like {
+    display: flex;
+   margin-left: 20px;
+   align-items: center;
+   cursor: pointer;
+}
+
+.superbox .video-all .informations .informations-flex .like .likebutton {
+    font-size: 25px;
+}
+
+.superbox .video-all .informations .informations-flex .like .text {
+    font-weight: 900;
+    margin-left: 5px;
+}
+
+.superbox .video-all .informations .informations-flex .deslike {
+    display: flex;
+   margin-left: 20px;
+   align-items: center;
+   cursor: pointer;
+}
+
+.superbox .video-all .informations .informations-flex .deslike .deslikebutton {
+    font-size: 25px;
+}
+
+.superbox .video-all .informations .informations-flex .deslike .text{
+    font-weight: 900;
+    margin-left: 5px;
+}
+
+.superbox .video-all .informations .informations-flex .share {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.superbox .video-all .informations .informations-flex .share .sharebutton {
+   font-size: 25px;
+}
+
+.superbox .video-all .informations .informations-flex .share .text {
+    font-weight: 900;
+    margin-left: 5px;
+ }
+
+ 
+
+ .superbox .video-all .informations .informations-flex .download {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.superbox .video-all .informations .informations-flex .download .downloadbutton {
+   font-size: 20px;
+}
+
+
+
+
+.superbox .video-all .informations .informations-flex .download .text {
+    font-weight: 900;
+    margin-left: 5px;
+ }
+
+ .superbox .video-all .informations .informations-flex .salvar {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.superbox .video-all .informations .informations-flex .salvar .salvarbutton {
+   font-size: 20px;
+}
+
+
+
+
+.superbox .video-all .informations .informations-flex .salvar .text {
+    font-weight: 900;
+    margin-left: 5px;
+ }
+
+ 
+ .superbox .video-all .informations .informations-flex .treedots {
+    font-size: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+ }
+
+.recommendedvideos {
+    margin-top: 80px;
+    margin-left: 25px;
+  width: 300px;
+}
+
+.recommendedvideos .box{
+width: 168px;
+height: 94px;
+background-color: #423d3d;
+cursor: pointer;
+
+display: flex;
+}
+
+.recommendedvideos .box .Tumbnail {
+    width: 168px;
+    height: 94px;
+    
+}
+
+.recommendedvideos .box .information {
+    color: black;
+    
+}
+
+
+.recommendedvideos .box .information .firstinformation{
+  display: flex;
+  width: 200px;
+ }
+
+
+
+.recommendedvideos a {
+    text-decoration: none;
+}
+
+
+.recommendedvideos .box .information .firstinformation .perfil-image img {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+}
+.recommendedvideos .box .information .firstinformation .titulo {
+  font-size: 15px;
+  font-weight:900;
+  margin-left: 10px;
+  width: 100%
+}
+
+.recommendedvideos .box .information .secondinformantion  {
+    margin: 10px 0px;
+  }
+
+.recommendedvideos .box .information .secondinformantion .channelname {
+    font-size: 12px;
+    font-weight:100;
+    margin-left: 10px;
+   
+  }
+  
+  .recommendedvideos .box .information .secondinformantion .views-and-age{
+    font-size: 12px;
+    font-weight:100;
+     margin: 0px 10px;
+    width: 100%;
+  }
